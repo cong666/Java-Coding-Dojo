@@ -20,7 +20,7 @@ public class RightFoot {
         this.robotStatus = robotStatus;
     }
 
-    public void operation() {
-        System.out.println("RightArm Operations");
+    public void doAction() {
+        System.out.println("RightArm doAction");
     }
 }

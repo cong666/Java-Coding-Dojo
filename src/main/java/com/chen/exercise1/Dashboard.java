@@ -34,6 +34,8 @@ public class Dashboard {
         double rightPowerLimbChargeCost = robotBus.getRightPowerLimb().getMaxCharge()*0.2/1000;
         double hipChargeCost = robotBus.getHip().getMaxCharge()*0.2/1000;
         double shoulderChargeCost = robotBus.getShoulder().getMaxCharge()*0.2/1000;
-        return leftArmChargeCost+rightFootChargeCost+rightThighChargeCost+rightPowerLimbChargeCost+hipChargeCost+shoulderChargeCost;
+        return leftArmChargeCost+rightFootChargeCost+
+                rightThighChargeCost+rightPowerLimbChargeCost+
+                hipChargeCost+shoulderChargeCost;
     }
 }

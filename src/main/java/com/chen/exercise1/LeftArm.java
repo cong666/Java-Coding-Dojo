@@ -22,8 +22,8 @@ public class LeftArm {
         this.robotStatus = robotStatus;
     }
 
-    public void operation() {
-        System.out.println("LeftArm Operations");
+    public void doAction() {
+        System.out.println("LeftArm doAction");
     }
 
 }
