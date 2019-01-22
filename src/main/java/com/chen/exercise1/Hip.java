@@ -6,8 +6,9 @@ package com.chen.exercise1;
  */
 public class Hip {
     private int maxCharge = 100;
-    private RobotStatus robotStatus;
+    private RobotStatus robotStatus = RobotStatus.OFF;
 
+    private RightThigh rightThigh;
     private RightPowerLimb rightPowerLimb;
     private RightFoot rightFoot;
 
@@ -25,6 +26,14 @@ public class Hip {
 
     public void setMaxCharge(int maxCharge) {
         this.maxCharge = maxCharge;
+    }
+
+    public RightThigh getRightThigh() {
+        return rightThigh;
+    }
+
+    public void setRightThigh(RightThigh rightThigh) {
+        this.rightThigh = rightThigh;
     }
 
     public RightPowerLimb getRightPowerLimb() {
@@ -48,6 +57,8 @@ public class Hip {
             this.setRightPowerLimb((RightPowerLimb) o);
         } else if (o instanceof RightFoot) {
             this.setRightFoot((RightFoot) o);
+        } else if (o instanceof RightThigh) {
+            this.setRightThigh((RightThigh) o);
         }
     }
 }

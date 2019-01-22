@@ -21,9 +21,17 @@ public class Dashboard {
         System.out.println("-Left Arm : "+robotBus.getLeftArm().getRobotStatus());
         System.out.println("-Right Foot : "+robotBus.getRightFoot().getRobotStatus());
         System.out.println("-Right Thigh : "+robotBus.getRightThigh().getRobotStatus());
+        System.out.println("--Right Power Limb : "+robotBus.getRightThigh().getRightPowerLimb().getRobotStatus());
+        System.out.println("---Right Foot : "+robotBus.getRightThigh().getRightPowerLimb().getRightFoot().getRobotStatus());
         System.out.println("-Right Power limb : "+robotBus.getRightPowerLimb().getRobotStatus());
+        System.out.println("--Right Foot : "+robotBus.getRightPowerLimb().getRightFoot().getRobotStatus());
         System.out.println("-Hip : "+robotBus.getHip().getRobotStatus());
+        System.out.println("--Right Foot : "+robotBus.getHip().getRightFoot().getRobotStatus());
+        System.out.println("--Right Thigh : "+robotBus.getHip().getRightThigh().getRobotStatus());
+        System.out.println("--Right Power Limb : "+robotBus.getHip().getRightPowerLimb().getRobotStatus());
+        System.out.println("---Right Foot : "+robotBus.getHip().getRightPowerLimb().getRightFoot().getRobotStatus());
         System.out.println("-Shoulder : "+robotBus.getShoulder().getRobotStatus());
+        System.out.println("--Left Arm : "+robotBus.getShoulder().getLeftArm().getRobotStatus());
     }
 
     //Everytime we have a new robot part added and connected to the RobotBus,this method need to be changed

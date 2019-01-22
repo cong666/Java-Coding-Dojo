@@ -5,7 +5,7 @@ package com.chen.exercise1;
  * Date: 19/1/21 下午10:03
  */
 public class RobotBus {
-    private RobotStatus robotStatus;
+    private RobotStatus robotStatus = RobotStatus.OFF;
 
     private LeftArm leftArm;
     private RightFoot rightFoot;

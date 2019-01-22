@@ -6,7 +6,7 @@ package com.chen.exercise1;
  */
 public class RightFoot {
     private int maxCharge=100;
-    private RobotStatus robotStatus;
+    private RobotStatus robotStatus = RobotStatus.OFF;
 
     public int getMaxCharge() {
         return maxCharge;

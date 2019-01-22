@@ -1,5 +1,7 @@
 package com.chen.exercise1;
 
+import com.chen.exercise2.RobotPart;
+
 import java.awt.*;
 
 /**
@@ -8,7 +10,7 @@ import java.awt.*;
  */
 public class LeftArm {
     private int maxCharge = 100;
-    private RobotStatus robotStatus;
+    private RobotStatus robotStatus = RobotStatus.OFF;
 
     public int getMaxCharge() {
         return maxCharge;
