@@ -2,6 +2,7 @@ package com.chen.exercise2;
 
 import com.chen.exercise2.RobotStatus;
 
+import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -21,21 +22,7 @@ public abstract class RobotPartAbstract implements RobotPart {
         }
     }
 
-    public List<RobotPart> getRobotPartList() {
-        return robotPartList;
-    }
-
-    public void doReport() {
-        for(RobotPart rp : robotPartList) {
-            rp.doReport();
-        }
-    }
     public double calculateTotalCost() {
-        double cost = 0.0;
-        List<RobotPart> robotPartList = this.getRobotPartList();
-        for(RobotPart rp : robotPartList) {
-            cost+=rp.calculateTotalCost();
-        }
-        return cost;
+        return 0.0;
     }
 }

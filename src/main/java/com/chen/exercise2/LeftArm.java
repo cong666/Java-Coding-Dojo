@@ -17,4 +17,12 @@ public class LeftArm extends RobotPartAbstract{
     public void doAction() {
         System.out.println("LeftArm doAction");
     }
+
+    public void doReport() {
+        System.out.println(this.robotStatus);
+    }
+
+    public double calculateTotalCost() {
+        return 0.2*maxCharge/1000;
+    }
 }

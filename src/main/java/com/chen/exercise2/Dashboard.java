@@ -14,9 +14,16 @@ public class Dashboard {
 
     public void doReport() {
         this.robotBus.doReport();
+        for(RobotPart rp : robotBus.robotPartList) {
+            rp.doReport();
+        }
     }
 
     public double calculateTotalCost() {
-        return robotBus.calculateTotalCost();
+        double cost = 0.0;
+        for(RobotPart rp : robotBus.robotPartList) {
+            cost+=rp.calculateTotalCost();
+        }
+        return cost;
     }
 }

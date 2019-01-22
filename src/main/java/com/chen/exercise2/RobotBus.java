@@ -16,4 +16,8 @@ public class RobotBus extends RobotPartAbstract {
     public void doAction() {
         this.sendCommand();
     }
+
+    public void doReport() {
+        System.out.println(this.robotStatus);
+    }
 }

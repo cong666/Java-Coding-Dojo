@@ -16,6 +16,14 @@ public class RightFoot extends RobotPartAbstract{
         this.robotStatus = robotStatus;
     }
 
+    public void doReport() {
+        System.out.println(this.robotStatus);
+    }
+
+    public double calculateTotalCost() {
+        return 0.2*maxCharge/1000;
+    }
+
     public void doAction() {
         System.out.println("RightFoot doAction");
     }
