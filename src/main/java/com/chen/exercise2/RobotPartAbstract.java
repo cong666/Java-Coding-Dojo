@@ -12,10 +12,6 @@ import java.util.List;
  */
 public abstract class RobotPartAbstract implements RobotPart {
 
-    public void connect(RobotPart from, RobotPart to) {
-        to.robotPartList.add(from);
-    }
-
     public void sendCommand() {
         for(RobotPart rp : robotPartList) {
             rp.doAction();
